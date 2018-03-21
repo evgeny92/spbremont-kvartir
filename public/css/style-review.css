@@ -1,0 +1,127 @@
+
+#quote {
+    padding: 20px 0 40px 0;
+    width: 100%;
+    color: #fff;
+}
+
+#quote-carousel .item {
+    min-height: 160px;
+}
+
+/* карусель отзывов bootstrap */
+/* carousel */
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control {
+    background: none;
+    color: #222;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+
+/* Previous button  */
+#quote-carousel .carousel-control.left {
+    left: -12px;
+}
+
+/* Next button  */
+#quote-carousel .carousel-control.right {
+    right: -12px !important;
+}
+
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0;
+    margin-right: -19px;
+}
+
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li {
+    background: #c0c0c0;
+}
+
+#quote-carousel .carousel-indicators .active {
+    background: #333333;
+}
+
+#quote-carousel img {
+    width: 100px;
+    height: 100px;
+}
+
+/* End carousel */
+
+.item p {
+    color: #1b1b1b;
+}
+
+.item small {
+    color: #1b1b1b;
+}
+
+.item blockquote {
+    border-left: none;
+    margin: 0;
+    font-family: 'Noto Serif', serif;
+}
+
+.item blockquote img {
+    margin: 0 0 10px 35px;;
+}
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #quote-carousel {
+        margin-bottom: 0;
+        padding: 0 40px 30px 40px;
+        margin-top: 30px;
+    }
+
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) {
+
+    #quote {
+        padding: 10px 0 30px 0;
+    }
+
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;
+    }
+
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0 5px;
+        width: 15px;
+        height: 15px;
+    }
+
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0 5px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .item p {
+        margin-left: 40px;
+    }
+
+    .item small {
+        margin-left: 40px;
+    }
+}
+
