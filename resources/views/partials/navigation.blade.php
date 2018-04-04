@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <a class="navbar-brand pull-left img-responsive" href="index.html"><img src="img/logo3.png"
+                <a class="navbar-brand pull-left img-responsive" href="{{ route('home') }}"><img src="{{ asset('img/logo.png') }}"
                                                                                         alt="logo"/></a>
             </div>
             <div class="col-md-4">
@@ -30,11 +30,11 @@
             </div>
             <div class="navbar-collapse collapse ">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Главная</a></li>
-                    <li><a href="price.html">Прайс-лист</a></li>
-                    <li><a href="portfolio.html">Наши Работы</a></li>
-                    <li><a href="posts.html">Статьи</a></li>
-                    <li><a href="contact.html">Контакты</a></li>
+                    <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="/">Главная</a></li>
+                    <li class="{{ Request::is('price') ? 'active' : '' }}"><a href="/price">Прайс-лист</a></li>
+                    <li class="{{ Request::is('portfolio') ? 'active' : '' }}"><a  href="/portfolio">Портфолио</a></li>
+                    <li class="{{ Request::is('articles') ? 'active' : '' }}"><a href="/articles">Статьи</a></li>
+                    <li class="{{ Request::is('contact') ? 'active' : '' }}"><a href="/contact">Контакты</a></li>
                 </ul>
             </div>
         </div>
