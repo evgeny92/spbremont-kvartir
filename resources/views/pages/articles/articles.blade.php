@@ -28,7 +28,7 @@
                         <p>Поверхностное облагораживание помещения. Обычно новые обои клеются на старые сверху, а
                             потолки окрашиваются не перешпаклёвываясь. Такой ремонт не подразумевает замены окон и
                             дверей на новые.</p>
-                        <a class="btn btn-posts" href="single_post.html"><span
+                        <a class="btn btn-posts" href="#"><span
                                     class="glyphicon glyphicon-eye-open"></span> Подробнее</a>
                     </div>
                 </div>

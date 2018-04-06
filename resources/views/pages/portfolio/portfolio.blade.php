@@ -27,7 +27,7 @@
                         <div class="overlay">
                             <h2>3 комнатная квартира</h2>
                             <p class="info">Евроремонт</p>
-                            <a class="btn btn-portfolio" href="single.html"><span class="glyphicon glyphicon-eye-open"></span> Подробнее</a>
+                            <a class="btn btn-portfolio" href=""><span class="glyphicon glyphicon-eye-open"></span> Подробнее</a>
                         </div>
                     </div>
 

@@ -1,4 +1,4 @@
-/*global jQuery:false */
+//animation
 jQuery(document).ready(function ($) {
     "use strict";
     //add some elements with animate effect
@@ -20,9 +20,6 @@ jQuery(document).ready(function ($) {
             $(this).find('p').removeClass("animated fadeInUp");
         }
     );
-
-    // tooltip
-    $('.social-network li a, .options_box .color a').tooltip();
 
     //scroll to top
     $(window).scroll(function () {

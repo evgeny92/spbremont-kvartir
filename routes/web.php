@@ -1,5 +1,5 @@
 <?php
-Route::get('/', 'PagesController@getHome')->name('home');
+Route::get('/', 'PagesController@getHome');
 
 Route::get('/price', 'PagesController@getPriceList')->name('price');
 
@@ -14,4 +14,4 @@ Route::post('/contact', 'PagesController@postContact')->name('postContact');
 
 
 Auth::routes();
-//Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');

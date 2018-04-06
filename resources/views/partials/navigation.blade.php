@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <a class="navbar-brand pull-left img-responsive" href="{{ route('home') }}"><img src="{{ asset('img/logo.png') }}"
+                <a class="navbar-brand pull-left img-responsive" href="{{ url('/') }}"><img src="{{ asset('img/logo.png') }}"
                                                                                         alt="logo"/></a>
             </div>
             <div class="col-md-4">
