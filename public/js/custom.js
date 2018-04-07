@@ -21,7 +21,7 @@ jQuery(document).ready(function ($) {
         }
     );
 
-    //scroll to top
+    //Scroll to top
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.scrollup').fadeIn();
@@ -34,14 +34,10 @@ jQuery(document).ready(function ($) {
         return false;
     });
 
-    //Slider Slippry
-    $('#slider').slippry({
-        pager: !0,
-        pause: 7000
-    });
-
     //Review Carousel
     $('.carousel').carousel({
         interval: 5000
     })
+
+
 });

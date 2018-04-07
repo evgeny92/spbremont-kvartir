@@ -1,5 +1,10 @@
 @extends('layouts.main')
 
+@section('styles')
+    <link href="{{ asset('css/style-review.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('css/slippry.css') }}" rel="stylesheet"/>
+@stop
+
 @section('content')
 
     <section id="main-caption">
@@ -172,4 +177,15 @@
     </section>
     <!--End Review Carousel-->
 
+@stop
+
+@section('scripts')
+    <script src="{{ asset('js/slippry.min.js') }}"></script>
+    <script>
+        //Slider Slippry
+        $('#slider').slippry({
+            pager: !0,
+            pause: 7000
+        });
+    </script>
 @stop
