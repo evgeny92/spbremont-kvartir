@@ -21,40 +21,17 @@
                 </div>
             </div>
             <div class="row">
+                @foreach($articles as $article)
                 <div class="col-sm-4">
                     <div class="well hover02">
-                        <img class="img-responsive" src="{{ asset('img/service1.jpg') }}" alt="">
-                        <h3>Что собой представляет косметический ремонт</h3>
-                        <p>Поверхностное облагораживание помещения. Обычно новые обои клеются на старые сверху, а
-                            потолки окрашиваются не перешпаклёвываясь. Такой ремонт не подразумевает замены окон и
-                            дверей на новые.</p>
-                        <a class="btn btn-posts" href="#"><span
+                        <img class="img-responsive" src="{{ asset('img/' . $article->article_image ) }}" alt="">
+                        <h3>{{ $article->article_title }}</h3>
+                        <p>{{ str_limit(strip_tags($article->article_content), 150) }}</p>
+                        <a class="btn btn-posts" href="{{ url('articles', $article->article_slug) }}"><span
                                     class="glyphicon glyphicon-eye-open"></span> Подробнее</a>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="well hover02">
-                        <img class="img-responsive" src="{{ asset('img/service2.jpg') }}" alt="">
-                        <h3>Что собой представляет капитальный ремонт</h3>
-                        <p>Поверхностное облагораживание помещения. Обычно новые обои клеются на старые сверху, а
-                            потолки окрашиваются не перешпаклёвываясь. Такой ремонт не подразумевает замены окон и
-                            дверей на новые.</p>
-                        <a class="btn btn btn-posts" href="single.html"><span
-                                    class="glyphicon glyphicon-eye-open"></span> Подробнее</a>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="well hover02">
-                        <img class="img-responsive" src="{{ asset('img/service3.jpg') }}" alt="">
-                        <h3>Что собой представляет авторский ремонт</h3>
-                        <p>Поверхностное облагораживание помещения. Обычно новые обои клеются на старые сверху, а
-                            потолки окрашиваются не перешпаклёвываясь. Такой ремонт не подразумевает замены окон и
-                            дверей на новые.</p>
-                        <a class="btn btn-posts" href="single.html"><span class="glyphicon glyphicon-eye-open"></span>
-                            Подробнее</a>
-                    </div>
-                </div>
-
+                @endforeach
             </div>
         </div>
     </section>

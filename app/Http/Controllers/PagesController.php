@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Article;
+use App\Portfolio;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller {
@@ -15,22 +17,35 @@ class PagesController extends Controller {
    }
 
    public function getPortfolio(){
-      return view('pages.portfolio.portfolio');
+      $portfolios = Portfolio::with('photos')->get();
+      //dd($portfolios);
+      //$portfolios = Portfolio::with('photos')->get();
+
+
+
+      return view('pages.portfolio.portfolio', compact('portfolios'));
    }
 
-   public function getSinglePortfolioPage(){
-      return view('pages.portfolio.single_portfolio');
+   public function getSinglePortfolioPage($portfolio_slug){
+      $portfolio = Portfolio::where('portfolio_slug', $portfolio_slug)->firstOrFail();
+      $photo = $portfolio->photos()->first();
+      $photos = $portfolio->photos()->get();
+      return view('pages.portfolio.single_portfolio', compact('portfolio', 'photos', 'photo'));
    }
 
    public function getArticles(){
-      return view('pages.articles.articles');
+      $articles = Article::all();
+      return view('pages.articles.articles', compact('articles'));
    }
 
-   public function getSingleArticlePage(){
-      return view('pages.articles.single_article');
+   public function getSingleArticlePage($article_slug){
+      $article = Article::where('article_slug', $article_slug)->firstOrFail();
+      return view('pages.articles.single_article', compact('article'));
    }
 
    public function getContact(){
       return view('pages.contact');
    }
+
+
 }

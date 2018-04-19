@@ -21,32 +21,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 top-caption">
-                    <h3>Ул. Рыбацкое, 3-ёх комнатная квартира</h3>
+                    <h3>{{ $portfolio->portfolio_title }}</h3>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-7 hidden-sm hidden-xs">
                     <div class="image">
-                        <img src="{{ asset('img/3213.jpg') }}" class="img-responsive" width="600px" alt="">
+                        <img src="{{ asset('img/' . $photo->filename) }}" class="img-responsive" width="600px" alt="">
                     </div>
                 </div>
                 <div class="col-md-5">
                     <h3 class="text-center object-caption">Характеристика объекта</h3>
                     <div class="notice notice-info">
-                        <strong>Проект квартиры:</strong> <span class="pull-right">2-ух комнатная</span>
+                        <strong>Проект квартиры:</strong> <span class="pull-right">{{ $portfolio->apartment_project }}</span>
                     </div>
                     <div class="notice notice-info">
-                        <strong>Площадь:</strong> <span class="pull-right">150кв.м</span>
+                        <strong>Площадь:</strong> <span class="pull-right">{{ $portfolio->apartment_area }}</span>
                     </div>
                     <div class="notice notice-info">
-                        <strong>Вид ремонта:</strong> <span class="pull-right">Евроремонт</span>
+                        <strong>Вид ремонта:</strong> <span class="pull-right">{{ $portfolio->type_repair }}</span>
                     </div>
                     <div class="notice notice-info">
-                        <strong>Год выполнения:</strong> <span class="pull-right">2017г</span>
+                        <strong>Год выполнения:</strong> <span class="pull-right">{{ $portfolio->year_implementation }}</span>
                     </div>
                     <div class="notice notice-info">
-                        <strong>Срок выполнения:</strong> <span class="pull-right">7 месяцев</span>
+                        <strong>Срок выполнения:</strong> <span class="pull-right">{{ $portfolio->deadline }}</span>
                     </div>
                 </div>
             </div>
@@ -59,26 +59,13 @@
             <div class="row">
                 <div class="col-md-12 image-size">
                     <div class="popup-gallery">
-                        <div class="col-md-3 col-sm-4 col-xs-6 hover01">
-                            <a href="{{ asset('img/superbox-full-10.jpg') }}">
-                                <img src="{{ asset('img/superbox-full-10.jpg') }}">
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6 hover01">
-                            <a href="{{ asset('img/superbox-full-3.jpg') }}">
-                                <img class="hover01" src="{{ asset('img/superbox-full-3.jpg') }}">
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6 hover01">
-                            <a href="{{ asset('img/superbox-full-9.jpg') }}">
-                                <img src="{{ asset('img/superbox-full-9.jpg') }}">
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6 hover01">
-                            <a href="{{ asset('img/superbox-full-14.jpg') }}">
-                                <img src="{{ asset('img/superbox-full-14.jpg') }}">
-                            </a>
-                        </div>
+                       @foreach($photos as $photo)
+                            <div class="col-md-3 col-sm-4 col-xs-6 hover01">
+                                <a href="{{ asset('img/' . $photo->filename) }}">
+                                    <img src="{{ asset('img/' . $photo->filename) }}">
+                                </a>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

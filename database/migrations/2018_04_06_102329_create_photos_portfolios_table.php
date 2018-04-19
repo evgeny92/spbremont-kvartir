@@ -13,7 +13,7 @@ class CreatePhotosPortfoliosTable extends Migration
      */
     public function up()
     {
-        Schema::create('photos_portfolios', function (Blueprint $table) {
+        Schema::create('photo_portfolio', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('portfolio_id')->unsigned();
             $table->foreign('portfolio_id')->references('id')->on('portfolios');

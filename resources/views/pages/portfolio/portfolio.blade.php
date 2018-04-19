@@ -21,48 +21,22 @@
                 </div>
             </div>
             <div class="row">
+                @foreach($portfolios as $portfolio)
                 <div class="col-md-3 col-sm-6">
                     <div class="hovereffect">
-                        <img src="img/superbox-full-10.jpg" width="230px" alt="">
+                        @foreach($portfolio->photos as $photo)
+                            @if($loop->first)
+                                <img src="{{ asset('img/' . $photo->filename) }}" width="230px" alt="">
+                            @endif
+                        @endforeach
                         <div class="overlay">
-                            <h2>3 комнатная квартира</h2>
-                            <p class="info">Евроремонт</p>
-                            <a class="btn btn-portfolio" href=""><span class="glyphicon glyphicon-eye-open"></span> Подробнее</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="hovereffect">
-                        <img src="img/superbox-full-14.jpg" width="230px" alt="">
-                        <div class="overlay">
-                            <h2>3 комнатная квартира</h2>
-                            <p class="info">Евроремонт</p>
-                            <a class="btn btn-portfolio" href="#"><span class="glyphicon glyphicon-eye-open"></span> Подробнее</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="hovereffect">
-                        <img src="img/superbox-full-9.jpg" width="230px" alt="">
-                        <div class="overlay">
-                            <h2>3 комнатная квартира</h2>
-                            <p class="info">Евроремонт</p>
-                            <a class="btn btn-portfolio" href="#"><span class="glyphicon glyphicon-eye-open"></span> Подробнее</a>
+                            <h2>{{ $portfolio->apartment_project }}</h2>
+                            <p class="info">{{ $portfolio->type_repair }}</p>
+                            <a class="btn btn-portfolio" href="{{ url('portfolio', $portfolio->portfolio_slug) }}"><span class="glyphicon glyphicon-eye-open"></span> Подробнее</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="hovereffect">
-                        <img src="img/superbox-full-10.jpg" width="230px" alt="">
-                        <div class="overlay">
-                            <h2>3 комнатная квартира</h2>
-                            <p class="info">Евроремонт</p>
-                            <a class="btn btn-portfolio" href="#"><span class="glyphicon glyphicon-eye-open"></span> Подробнее</a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

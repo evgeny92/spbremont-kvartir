@@ -12,6 +12,5 @@ Route::get('/articles/{article_slug}', 'PagesController@getSingleArticlePage')->
 Route::get('/contact', 'PagesController@getContact')->name('contact');
 Route::post('/contact', 'PagesController@postContact')->name('postContact');
 
-
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
