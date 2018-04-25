@@ -5,10 +5,7 @@
     <section id="inner-headline">
         <div class="container">
             <div class="row">
-                <ol class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li class="active">Data</li>
-                </ol>
+                {!! Breadcrumbs::render('price') !!}
             </div>
         </div>
     </section>

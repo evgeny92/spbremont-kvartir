@@ -2,16 +2,7 @@
 
 @section('content')
 
-    <section id="inner-headline">
-        <div class="container">
-            <div class="row">
-                <ol class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li class="active">Data</li>
-                </ol>
-            </div>
-        </div>
-    </section>
+    @include('partials.breadcrumbs')
 
     <section id="posts-content">
         <div class="container">

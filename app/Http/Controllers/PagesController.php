@@ -19,10 +19,6 @@ class PagesController extends Controller {
    public function getPortfolio(){
       $portfolios = Portfolio::with('photos')->get();
       //dd($portfolios);
-      //$portfolios = Portfolio::with('photos')->get();
-
-
-
       return view('pages.portfolio.portfolio', compact('portfolios'));
    }
 

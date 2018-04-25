@@ -60,7 +60,7 @@
                         <p class="text-center">
                             <strong><a href="">www.spbremont-kvartir.ru</a></strong> - отделка и ремонт квартир,
                             коттеджей, офисов в
-                            Санкт-Петербурге 2018г &copy;
+                            Санкт-Петербурге {{ date('Y') }}г.
                         </p>
                     </div>
                 </div>
