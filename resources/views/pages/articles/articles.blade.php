@@ -2,7 +2,13 @@
 
 @section('content')
 
-    @include('partials.breadcrumbs')
+    <section id="inner-headline">
+        <div class="container">
+            <div class="row">
+                {!! Breadcrumbs::render('articles') !!}
+            </div>
+        </div>
+    </section>
 
     <section id="posts-content">
         <div class="container">

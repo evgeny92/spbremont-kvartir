@@ -2,7 +2,13 @@
 
 @section('content')
 
-    @include('partials.breadcrumbs')
+    <section id="inner-headline">
+        <div class="container">
+            <div class="row">
+                {!! Breadcrumbs::render('contact') !!}
+            </div>
+        </div>
+    </section>
 
     <section id="contact-content">
         <div class="container">
