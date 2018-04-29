@@ -1,4 +1,6 @@
 <?php
+
+// Main Pages
 Route::get('/', 'PagesController@getHome')->name('/');
 
 Route::get('/price', 'PagesController@getPriceList')->name('price');
@@ -14,3 +16,16 @@ Route::post('/contact', 'PagesController@postContact')->name('postContact');
 
 Auth::routes();
 //Route::get('/home', 'HomeController@index')->name('home');
+
+// Admin
+
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
+
+   Route::get('/', 'HomeController@index');
+   Route::resource('portfolio', 'PortfolioController');
+   Route::resource('articles', 'ArticleController');
+
+});
+
+
+
