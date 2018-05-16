@@ -17,19 +17,24 @@
                     <h3>Полезные статьи о ремонте квартир</h3>
                 </div>
             </div>
-            <div class="row">
-                @foreach($articles as $article)
-                <div class="col-sm-4">
-                    <div class="well hover02">
-                        <img class="img-responsive" src="{{ asset('img/' . $article->article_image ) }}" alt="">
-                        <h3>{{ $article->article_title }}</h3>
-                        <p>{{ str_limit(strip_tags($article->article_content), 150) }}</p>
-                        <a class="btn btn-posts" href="{{ url('articles', $article->article_slug) }}"><span
-                                    class="glyphicon glyphicon-eye-open"></span> Подробнее</a>
-                    </div>
+            @foreach($articles->chunk(3) as $items)
+                <div class="row">
+                    @foreach($items as $item)
+                        <div class="col-md-4">
+                            <div class="blog-post hover02">
+                                <a href="{{ url('articles', $item->article_slug) }}"><img class="img-responsive"
+                                                 src="{{ asset('img/articles/' . $item->article_image ) }}" alt=""></a>
+                                <h4><a href="{{ url('articles', $item->article_slug) }}">
+                                        {{ $item->article_title }}</a>
+                                </h4>
+                                <p>{{ str_limit(strip_tags($item->article_content), 150) }}<p>
+                                    <a class="btn btn-posts" href="{{ url('articles', $item->article_slug) }}">
+                                        <span class="glyphicon glyphicon-eye-open"></span> Подробнее</a>
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
-                @endforeach
-            </div>
+            @endforeach
         </div>
     </section>
 

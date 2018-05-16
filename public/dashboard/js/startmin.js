@@ -1,7 +1,5 @@
 $(function() {
-
     $('#side-menu').metisMenu();
-
 });
 
 //Loads the correct sidebar on window load,
@@ -34,3 +32,24 @@ $(function() {
         element.addClass('active');
     }
 });
+
+//Tooltip
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
+//Alert danger
+$('span.text-danger').delay(5000).fadeOut(350);
+
+//Alert
+$('div.alert').delay(5000).fadeOut(350);
+
+//Delete confirmation
+$(".delete-article").on("submit", function(){
+    return confirm("Вы уверены, что хотите удалить статью?");
+});
+
+
+
+
+

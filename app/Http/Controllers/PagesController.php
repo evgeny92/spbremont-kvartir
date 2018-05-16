@@ -32,6 +32,7 @@ class PagesController extends Controller {
    public function getArticles(){
       $articles = Article::all();
       return view('pages.articles.articles', compact('articles'));
+
    }
 
    public function getSingleArticlePage($article_slug){

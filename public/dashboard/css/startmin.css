@@ -48,7 +48,7 @@ body {
 }
 
 .navbar-top-links li:last-child {
-    margin-right: 6px;
+    margin-right: 3px;
 }
 
 .navbar-top-links li a {
@@ -550,4 +550,30 @@ body {
 .tabbed-panel.panel-danger .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
     color: #fff; /* active text color */
     background-color: #a94442; /* active bg color */
+}
+
+/*Table vertical align*/
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+    vertical-align: text-top;
+}
+
+@media(max-width:992px) {
+
+    /*Show article*/
+    .thumb-content {
+        padding: 0 5px 5px 5px;
+    }
+}
+
+@media(max-width:480px) {
+
+    /*Title*/
+    h1{
+        font-size: 25px;
+    }
+
+    .btn-margin-left{
+        margin-left: 15px;
+    }
 }

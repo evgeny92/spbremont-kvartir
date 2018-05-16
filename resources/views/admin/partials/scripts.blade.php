@@ -6,3 +6,7 @@
 <script src="{{ asset('dashboard/js/metisMenu.min.js') }}"></script>
 <!-- Custom Theme JavaScript -->
 <script src="{{ asset('dashboard/js/startmin.js') }}"></script>
+@yield('scripts')
+
+
+

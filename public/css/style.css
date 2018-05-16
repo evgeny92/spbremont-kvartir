@@ -368,7 +368,7 @@ ul.nav li.dropdown a {
 
 #main-content {
     position: relative;
-    background: url("../img/222.jpg");
+    background: url("../img/whychooseus.jpg");
     padding: 20px 0 40px 0;
     box-shadow: inset 0 0 1000px 1000px rgba(0, 0, 0, 0.5);
     background-size: cover;
@@ -553,7 +553,7 @@ ul.nav li.dropdown a {
 }
 
 .top-caption {
-    margin: 0 0 20px 60px;
+    margin: 0 0 20px 40px;
 }
 
 #single-content a {
@@ -621,8 +621,6 @@ ul.nav li.dropdown a {
     color: #45ABCD;
 }
 
-
-
 /****Posts Content****/
 
 #posts-content {
@@ -663,6 +661,14 @@ ul.nav li.dropdown a {
     -moz-transition: all 300ms !important;
     -webkit-filter: drop-shadow(0 0 2px #008fcc); /* Safari */
     filter: drop-shadow(0 0 2px grey);
+}
+
+.blog-post{
+    margin-bottom: 50px;
+}
+
+.blog-post h4{
+    font-weight: bold;
 }
 
 /**** Single post content ****/
@@ -707,8 +713,8 @@ ul.nav li.dropdown a {
 
 .btn-send:hover {
     border: 1px solid #008fcc;
-    background: #fff;
-    color: #008fcc;
+    background: #00bfff;
+    color: #ffffff;
     transition: background 0.5s;
 }
 
@@ -1139,6 +1145,10 @@ a.scrollup i:hover {
     .notice {
         padding: 10px;
         font-size: 14px;
+    }
+
+    .thumb-content {
+        padding: 0 5px 5px 5px;
     }
 }
 
