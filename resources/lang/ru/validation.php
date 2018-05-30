@@ -134,6 +134,13 @@ return [
     'attributes' => [
        'article_title' => 'Заголовок статьи',
        'article_image' => 'Изображение статьи',
-       'article_content' => 'Текст статьи'
+       'article_content' => 'Текст статьи',
+       'portfolio_title' => 'Заголовок портфолио',
+       'apartment_project' => 'Проект квартиры',
+       'apartment_area' => 'Площадь',
+       'type_repair' => 'Вид ремонта',
+       'year_implementation' => 'Год выполнения',
+       'deadline' => 'Срок выполнения',
+       'portfolio_photos' => 'Фотографии',
     ],
 ];

@@ -55,8 +55,6 @@ class ArticleController extends Controller {
 
       Session::flash('success', 'Новая статья была успешно добавлена.');
       return redirect()->route('articles.index');
-
-
    }
 
    /**
@@ -110,8 +108,6 @@ class ArticleController extends Controller {
 
       Session::flash('success', 'Cтатья была успешно отредактирована.');
       return redirect()->route('articles.edit', $article->id);
-
-
    }
 
    /**
@@ -126,6 +122,5 @@ class ArticleController extends Controller {
       $article->delete();
       Session::flash('success', 'Статья успешно удалена.');
       return redirect()->route('articles.index');
-
    }
 }

@@ -25,13 +25,15 @@
             <div class="row">
                 <div class="col-md-7 hidden-sm hidden-xs">
                     <div class="image">
-                        <img src="{{ asset('img/' . $photo->filename) }}" class="img-responsive" width="600px" alt="">
+                        <img src="{{ asset('img/portfolio/' . $photo->portfolio_photos) }}" class="img-responsive"
+                             width="600px" alt="">
                     </div>
                 </div>
                 <div class="col-md-5">
                     <h3 class="text-center object-caption">Характеристика объекта</h3>
                     <div class="notice notice-info">
-                        <strong>Проект квартиры:</strong> <span class="pull-right">{{ $portfolio->apartment_project }}</span>
+                        <strong>Проект квартиры:</strong> <span
+                                class="pull-right">{{ $portfolio->apartment_project }}</span>
                     </div>
                     <div class="notice notice-info">
                         <strong>Площадь:</strong> <span class="pull-right">{{ $portfolio->apartment_area }}</span>
@@ -40,7 +42,8 @@
                         <strong>Вид ремонта:</strong> <span class="pull-right">{{ $portfolio->type_repair }}</span>
                     </div>
                     <div class="notice notice-info">
-                        <strong>Год выполнения:</strong> <span class="pull-right">{{ $portfolio->year_implementation }}</span>
+                        <strong>Год выполнения:</strong> <span
+                                class="pull-right">{{ $portfolio->year_implementation }}</span>
                     </div>
                     <div class="notice notice-info">
                         <strong>Срок выполнения:</strong> <span class="pull-right">{{ $portfolio->deadline }}</span>
@@ -56,8 +59,8 @@
             <div class="row">
                 <div id="gallery" style="display:none;">
                     @foreach($photos as $photo)
-                        <img alt="" src="{{ asset('img/' . $photo->filename) }}"
-                             data-image="{{ asset('img/' . $photo->filename) }}"/>
+                        <img alt="" src="{{ asset('img/portfolio/' . $photo->portfolio_photos) }}"
+                             data-image="{{ asset('img/portfolio/' . $photo->portfolio_photos) }}"/>
                     @endforeach
                 </div>
             </div>
@@ -69,7 +72,7 @@
     <script src="{{ asset('js/unitegallery.min.js') }}"></script>
     <script src="{{ asset('js/ug-theme-tiles.js') }}"></script>
     <script type="text/javascript">
-        jQuery(function($) {
+        jQuery(function ($) {
             $("#gallery").unitegallery({
                 gallery_theme: "tiles"
             });

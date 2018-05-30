@@ -45,8 +45,8 @@ $('span.text-danger').delay(5000).fadeOut(350);
 $('div.alert').delay(5000).fadeOut(350);
 
 //Delete confirmation
-$(".delete-article").on("submit", function(){
-    return confirm("Вы уверены, что хотите удалить статью?");
+$(".delete").on("submit", function(){
+    return confirm("Вы уверены?");
 });
 
 

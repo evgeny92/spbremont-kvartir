@@ -26,7 +26,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($articles as $key => $article)
+                        @foreach($articles as $article)
                             <tr>
                                 <td>{{ $article->id }}</td>
                                 <td><a href="{{ route('articles.show', $article->id) }}">{{ str_limit($article->article_title, 40) }}</a></td>
@@ -43,7 +43,7 @@
                                        class="btn btn-warning btn-sm" title="Редактировать" data-toggle="tooltip"
                                        data-placement="top"><i class="fa fa-edit"></i>
                                     </a>
-                                    {!! Form::open(['route' => ['articles.destroy', $article->id], 'style' => 'display:inline', 'class' => 'delete-article', 'method' => 'DELETE']) !!}
+                                    {!! Form::open(['route' => ['articles.destroy', $article->id], 'style' => 'display:inline', 'class' => 'delete', 'method' => 'DELETE']) !!}
                                     <button class="btn btn-danger btn-sm" type="submit" title="Удалить" data-toggle="tooltip"
                                             data-placement="top"><i class="glyphicon glyphicon-trash"></i>
                                     </button>

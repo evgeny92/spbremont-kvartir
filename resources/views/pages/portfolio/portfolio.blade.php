@@ -19,23 +19,25 @@
             </div>
             <div class="row">
                 @foreach($portfolios as $portfolio)
-                <div class="col-md-3 col-sm-6">
-                    <div class="hovereffect">
-                        @foreach($portfolio->photos as $photo)
-                            @if($loop->first)
-                                <img src="{{ asset('img/' . $photo->filename) }}" width="230px" alt="">
-                            @endif
-                        @endforeach
-                        <div class="overlay">
-                            <h2>{{ $portfolio->apartment_project }}</h2>
-                            <p class="info">{{ $portfolio->type_repair }}</p>
-                            <a class="btn btn-portfolio" href="{{ url('portfolio', $portfolio->portfolio_slug) }}"><span class="glyphicon glyphicon-eye-open"></span> Подробнее</a>
-                        </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <a class="list-quotes" href="{{ url('portfolio', $portfolio->portfolio_slug) }}">
+                            @foreach($portfolio->photos as $photo)
+                                @if($loop->first)
+                                    <img src="{{ asset('img/portfolio/' . $photo->portfolio_photos) }}"
+                                         class="img-responsive" alt="Портфоли ремонт квартир">
+                                @endif
+                            @endforeach
+                            <div class="quotes">
+                                <h1>{{ $portfolio->portfolio_title }} / Тип ремонта: {{ $portfolio->type_repair }} </h1>
+                                <p>
+                                    <span class="glyphicon glyphicon-eye-open"></span> Подробнее
+                                </p>
+                            </div>
+                        </a>
                     </div>
-                </div>
                 @endforeach
             </div>
         </div>
     </section>
-
 @stop
+

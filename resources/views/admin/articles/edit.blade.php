@@ -17,7 +17,6 @@
                     <strong>Статья:</strong> {{ $article->article_title }}
                 </div>
                 <div class="panel-body">
-                    {{--{!! Form::model($article, ['route' =>['articles.update',$article->id],'method'=>'PUT','files'=>'true']) !!}--}}
                     {!! Form::model($article, ['route' => ['articles.update', $article->id], 'method' => 'PUT', 'files' => 'true' ]) !!}
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1">
