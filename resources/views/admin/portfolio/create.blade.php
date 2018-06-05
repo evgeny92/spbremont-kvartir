@@ -18,8 +18,9 @@
                 </div>
                 <div class="panel-body">
                     {!! Form::open([ 'route' => 'portfolio.store', 'files' => 'true']) !!}
-                    <div class="col-md-10 col-md-offset-1">
 
+                    <div id="fakeLoader"></div>
+                    <div class="col-md-10 col-md-offset-1">
                         <div class="form-group {{ $errors->has('portfolio_title') ? 'has-error' : '' }}">
                             <label for="portfolio_title">Заголовок портфолио</label>
                             <input type="text" id="portfolio_title" name="portfolio_title" class="form-control"

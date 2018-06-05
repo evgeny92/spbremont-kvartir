@@ -1,8 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.main')
 
 @section('content')
 <div class="container">
-    <div class="row">
+    {{--<div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Reset Password</div>
@@ -42,6 +42,22 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>--}}
+    <div class="card card-container">
+        @include('partials.messages')
+        <img id="profile-img" class="profile-img-card" src="{{ asset('img/rpass.png') }}"/>
+        <p id="profile-name" class="profile-name-card">Заполните поле для сброса пароля</p>
+
+        {!! Form::open(['route'=>'password.email','class'=>'form-signin']) !!}
+
+            <span id="reauth-email" class="reauth-email"></span>
+            <input type="email" id="email" name="email" class="form-control"
+                   placeholder="Е-майл" value="{{ old('email') }}" required autofocus>
+
+            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Отправить</button>
+
+        {!! Form::close() !!}
+
+    </div><!-- /card-container -->
 </div>
 @endsection

@@ -19,7 +19,7 @@ Auth::routes();
 
 // Admin
 
-Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth'], function () {
 
    Route::get('/', 'HomeController@index');
    Route::resource('portfolio', 'PortfolioController');

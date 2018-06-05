@@ -37,7 +37,10 @@ jQuery(document).ready(function ($) {
     //Review Carousel
     $('.carousel').carousel({
         interval: 5000
-    })
+    });
+
+    //Alert
+    $('div.alert').delay(5000).fadeOut(350);
 
 
 });

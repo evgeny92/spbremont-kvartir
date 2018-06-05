@@ -34,12 +34,6 @@ input, button, select, textarea {
     border-radius: 0 !important;
 }
 
-/*#wrapper {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}*/
-
 .navbar-default .navbar-toggle {
     border-color: #ddd;
     margin-top: 10px;
@@ -327,13 +321,14 @@ ul.nav li.dropdown a {
 .breadcrumb > .active {
     color: #FFFFFF;
 }
+
 /**** Caption ****/
 
 .caption-h3 {
     padding-bottom: 20px;
 }
 
-.caption-h3 h3{
+.caption-h3 h3 {
     font-weight: bold;
     color: #000000;
 }
@@ -445,17 +440,20 @@ ul.nav li.dropdown a {
     position: relative;
     display: block;
 }
+
 .list-quotes img,
 .list-quotes h1 {
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
 }
+
 .list-quotes img {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-.list-quotes h1{
-    background: rgba(20,31,44,0.8);
+
+.list-quotes h1 {
+    background: rgba(20, 31, 44, 0.8);
     bottom: 30px;
     float: right;
     color: #fff;
@@ -476,35 +474,40 @@ ul.nav li.dropdown a {
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(0,50px,0);
-    transform: translate3d(0,50px,0);
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
     font-size: 15px;
     font-weight: normal;
-    background: rgba(51,153,240,0.8);
+    background: rgba(51, 153, 240, 0.8);
     width: 100%;
     color: #fff;
 }
+
 .list-quotes:hover img {
-    -webkit-transform: translate3d(0,-80px,0);
+    -webkit-transform: translate3d(0, -80px, 0);
     transform: scale(1.2);
     transition: all 250ms ease;
 }
-.list-quotes:hover{
-    box-shadow: 0 0 5px 2px rgba(51,153,153, 0.5);
+
+.list-quotes:hover {
+    box-shadow: 0 0 5px 2px rgba(51, 153, 153, 0.5);
 }
+
 .list-quotes:hover h1 {
-    -webkit-transform: translate3d(0,-100px,0);
-    transform: translate3d(0,-100px,0);
+    -webkit-transform: translate3d(0, -100px, 0);
+    transform: translate3d(0, -100px, 0);
     text-shadow: 0px 0 15px #fff;
     transition: all 250ms ease;
 }
+
 .list-quotes:hover p {
     opacity: 1;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
-.quotes span{
-    color:#222;
+
+.quotes span {
+    color: #222;
     font-weight: bold;
     text-transform: capitalize;
     color: #fff;
@@ -554,7 +557,7 @@ ul.nav li.dropdown a {
     border-color: #ddd;
 }
 
-#single-content hr{
+#single-content hr {
     width: 97%;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -565,6 +568,7 @@ ul.nav li.dropdown a {
 .object-caption {
     margin: 0 0 40px 0;
 }
+
 .gallery-caption {
     margin: 0 0 30px 0;
 }
@@ -578,15 +582,17 @@ ul.nav li.dropdown a {
     background-color: #fafafa;
     border-left: 6px solid #7f7f84;
     margin-bottom: 15px;
-    -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
-    -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
-    box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 5px 8px -6px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 5px 8px -6px rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 8px -6px rgba(0, 0, 0, .2);
 }
+
 .notice-info {
     font-size: 16px;
     border-color: #45ABCD;
 }
-.notice-info>strong {
+
+.notice-info > strong {
     color: #45ABCD;
 }
 
@@ -632,11 +638,11 @@ ul.nav li.dropdown a {
     filter: drop-shadow(0 0 2px grey);
 }
 
-.blog-post{
+.blog-post {
     margin-bottom: 50px;
 }
 
-.blog-post h4{
+.blog-post h4 {
     font-weight: bold;
 }
 
@@ -726,13 +732,7 @@ form#contactform .validation {
 }
 
 /* --- button --- */
-/*.btn {
-    text-align: center;
-    color: #FFFFFF;
-    padding: 12px 25px;
-    border-radius: 0;
-    background: #2B96CC;
-}*/
+
 /* --- Footer --- */
 
 ul.link-list {
@@ -815,9 +815,8 @@ footer h5 a:hover, footer a:hover {
     text-decoration: none;
 }
 
-
 .contact-detail-box {
-   color: #008fcc;
+    color: #008fcc;
 }
 
 .contact-detail-box:hover {
@@ -863,7 +862,6 @@ footer h5 a:hover, footer a:hover {
     margin-top: 40px;
 }
 
-
 #sub-footer {
     text-shadow: none;
     color: #f5f5f5;
@@ -886,11 +884,11 @@ footer h5 a:hover, footer a:hover {
     font-size: 14px;
 }
 
-.copyright a{
+.copyright a {
     color: #008fcc;
 }
 
-.copyright a:hover{
+.copyright a:hover {
     color: #f5f5f5;
 }
 
@@ -925,6 +923,144 @@ a.scrollup i:hover {
     text-decoration: none;
 }
 
+.alert-success {
+
+    background-color: #3CB371;
+    border-color: #3CB371;
+    color: #FFF;
+
+}
+
+.alert-danger {
+    background-color: #ff6a4a;
+    border-color: #ebccd1;
+    color: #FFF;
+}
+
+/*Sign In Form*/
+
+.card-container.card {
+    max-width: 350px;
+    padding: 35px 40px;
+}
+
+.card {
+    background-color: #B0E0E6;
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 15px;
+    display: block;
+}
+
+/* Form styles  */
+.profile-name-card {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0;
+    min-height: 1em;
+}
+
+.reauth-email {
+    display: block;
+    color: #404040;
+    line-height: 2;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin #email,
+.form-signin #password {
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+}
+
+.form-signin input[type=email],
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+    border-color: rgb(104, 145, 162);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(104, 145, 162);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(104, 145, 162);
+}
+
+.btn-signin {
+    border-radius: 0;
+    border: 1px solid #008fcc;
+    background: #008fcc;
+    color: #fff;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+}
+
+.btn-signin:hover {
+    border: 1px solid #008fcc;
+    background: #00bfff;
+    color: #ffffff;
+    transition: background 0.5s;
+}
+
+.form-signin .checkbox {
+    color: #404040;
+    font-weight: normal;
+}
+
+.form-signin a {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    text-decoration: none;
+}
+
+.forgot-password {
+    color: #404040;
+    font-weight: normal;
+}
+
+.forgot-password:hover,
+.forgot-password:active,
+.forgot-password:focus {
+    color: #008fcc;
+}
+
+/* Sign In End*/
+
 /*---Media queries ---*/
 @media (min-width: 979px) and (max-width: 1200px) {
     .image-size img {
@@ -954,18 +1090,18 @@ a.scrollup i:hover {
         padding-bottom: 0;
     }
 
-    .caption-h3 h3{
+    .caption-h3 h3 {
         margin: 0;
     }
 
     .top-caption h3 {
         margin: 0 0 0 50px;
     }
+
     .object-caption {
         margin: 0 0 30px 0;
         font-size: 20px;
     }
-
 }
 
 @media (max-width: 767px) {
@@ -1081,7 +1217,7 @@ a.scrollup i:hover {
         padding: 10px;
     }
 
-    .caption-h3 h3{
+    .caption-h3 h3 {
         margin: 0;
     }
 
@@ -1132,7 +1268,7 @@ a.scrollup i:hover {
     }
 
     .topbar p {
-        margin: 40px 50px 0 0;
+        margin: 45px 30px 0 0;
     }
 
     .image-size img {
@@ -1155,12 +1291,12 @@ a.scrollup i:hover {
         font-size: 12px;
     }
 
-    .caption-h3 h3{
+    .caption-h3 h3 {
         margin: 0;
     }
 
     #portfolio-content {
-      margin: 0 25px 0 20px
+        margin: 0 25px 0 20px
     }
 
     .price-caption h3 {
@@ -1212,10 +1348,7 @@ a.scrollup i:hover {
         font-size: 12px;
     }
 
-    .caption-h3 h3{
+    .caption-h3 h3 {
         margin: 0;
     }
-
 }
-
- 

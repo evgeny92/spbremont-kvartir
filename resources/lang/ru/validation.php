@@ -68,7 +68,7 @@ return [
     'not_regex' => 'Выбранный формат для :attribute ошибочный.',
     'numeric' => 'Поле :attribute должно быть числом.',
     'present' => 'Поле :attribute должно присутствовать.',
-    'regex' => 'Поле :attribute имеет ошибочный формат.',
+    'regex' => 'Поле :attribute должно содержать минимум 6 символов, комбинацию цифр, строчных и заглавных букв.',
     'required' => 'Поле :attribute обязательно для заполнения.',
     'required_if' => 'Поле :attribute обязательно для заполнения, когда :other равно :value.',
     'required_unless' => 'Поле :attribute обязательно для заполнения, когда :other не равно :values.',
@@ -142,5 +142,9 @@ return [
        'year_implementation' => 'Год выполнения',
        'deadline' => 'Срок выполнения',
        'portfolio_photos' => 'Фотографии',
+       'name' => 'Имя',
+       'email' => 'Е-майл',
+       'password' => 'Пароль',
+       'password_confirmation' => 'Повтор пароля',
     ],
 ];
