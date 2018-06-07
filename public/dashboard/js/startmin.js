@@ -48,8 +48,3 @@ $('div.alert').delay(5000).fadeOut(350);
 $(".delete").on("submit", function(){
     return confirm("Вы уверены?");
 });
-
-
-
-
-

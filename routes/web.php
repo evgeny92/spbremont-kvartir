@@ -24,6 +24,10 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth
    Route::get('/', 'HomeController@index');
    Route::resource('portfolio', 'PortfolioController');
    Route::resource('articles', 'ArticleController');
+   Route::get('user', 'ProfileController@showUserProfile')->name('userProfile');
+   Route::post('user', 'ProfileController@updateUserProfile')->name('updateUserProfile');
+   Route::get('user/password', 'ProfileController@showUserPassword')->name('updatePassword');
+   Route::post('user/password', 'ProfileController@updateUserPassword')->name('updateUserPassword');
 
 });
 

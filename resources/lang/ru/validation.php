@@ -146,5 +146,8 @@ return [
        'email' => 'Е-майл',
        'password' => 'Пароль',
        'password_confirmation' => 'Повтор пароля',
+       'old_password' => 'Старый пароль',
+       'new_password' => 'Новый пароль',
+       'confirm_password' => 'Повтор нового пароля',
     ],
 ];

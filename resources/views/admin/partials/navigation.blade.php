@@ -1,7 +1,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="navbar-header">
-        <a class="navbar-brand" href="#">Админка</a>
+        <a class="navbar-brand" href="">Панель</a>
     </div>
 
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -12,7 +12,7 @@
     </button>
 
     <ul class="nav navbar-nav navbar-left navbar-top-links">
-        <li><a href="#"><i class="fa fa-home fa-fw"></i> На сайт</a></li>
+        <li><a href="{{ route('/') }}"><i class="fa fa-home fa-fw"></i> На сайт</a></li>
     </ul>
 
     <ul class="nav navbar-right navbar-top-links">
@@ -21,10 +21,14 @@
                 <i class="fa fa-user fa-fw"></i> <b class="caret"></b>
             </a>
             <ul class="dropdown-menu dropdown-user">
-                <li><a href="#"><i class="fa fa-user fa-fw"></i> Профиль</a></li>
-                <li><a href="#"><i class="fa fa-gear fa-fw"></i> Настройки</a></li>
+                <li><a href="{{ route('userProfile') }}"><i class="fa fa-user fa-fw"></i> Профиль</a></li>
+                <li><a href="{{ route('updatePassword') }}"><i class="fa fa-gear fa-fw"></i> Настройки</a></li>
                 <li class="divider"></li>
-                <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Выход</a></li>
+                <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
+         document.getElementById('logout-form').submit();"><i class="fa fa-sign-out fa-fw"></i> Выход</a></li>
+                <form id="logout-form"  action="{{ route('logout') }}" method="POST" style="display: none;">
+                    {{ csrf_field() }}
+                </form>
             </ul>
         </li>
     </ul>
