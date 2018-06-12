@@ -11,8 +11,8 @@ Route::get('/portfolio/{portfolio_slug}', 'PagesController@getSinglePortfolioPag
 Route::get('/articles', 'PagesController@getArticles')->name('articles');
 Route::get('/articles/{article_slug}', 'PagesController@getSingleArticlePage')->name('singleArticle');
 
-Route::get('/contact', 'PagesController@getContact')->name('contact');
-Route::post('/contact', 'PagesController@postContact')->name('postContact');
+Route::get('/contact', 'ContactController@getContact')->name('contact');
+Route::post('/contact', 'ContactController@postContact')->name('postContact');
 
 Auth::routes();
 //Route::get('/home', 'HomeController@index')->name('home');

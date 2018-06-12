@@ -693,6 +693,11 @@ ul.nav li.dropdown a {
     transition: background 0.5s;
 }
 
+.output_message {
+    color: #333;
+    font-weight: bold;
+}
+
 /* typography */
 h1 {
     text-align: center;
@@ -845,6 +850,7 @@ footer h5 a:hover, footer a:hover {
 }
 
 .viber {
+    margin: 0 46px 0 0;
     font-size: 20px;
     text-decoration: none;
     color: #59267c;
@@ -1254,6 +1260,10 @@ a.scrollup i:hover {
     .thumb-content {
         padding: 0 5px 5px 5px;
     }
+
+    .btn-send {
+        margin: 0 0 10px 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1329,6 +1339,11 @@ a.scrollup i:hover {
         padding: 10px;
         font-size: 14px;
     }
+
+    .btn-send {
+        margin: 0 0 10px 0;
+    }
+
 }
 
 @media (max-width: 320px) {

@@ -32,15 +32,10 @@ class PagesController extends Controller {
    public function getArticles(){
       $articles = Article::all();
       return view('pages.articles.articles', compact('articles'));
-
    }
 
    public function getSingleArticlePage($article_slug){
       $article = Article::where('article_slug', $article_slug)->firstOrFail();
       return view('pages.articles.single_article', compact('article'));
-   }
-
-   public function getContact(){
-      return view('pages.contact');
    }
 }

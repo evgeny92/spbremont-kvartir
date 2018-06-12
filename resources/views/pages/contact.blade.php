@@ -22,8 +22,8 @@
                     <div class="contact-detail-box">
                         <i class="fas fa-phone fa-5x"></i>
                         <h4>Viber, WhatsApp</h4>
-                        <a class="whatsapp" href=""><i class="fab fa-whatsapp"></i> +7(495)978-90-28</a><br>
-                        <a class="viber" href=""><i class="fab fa-viber"></i> +7(495)978-90-28</a>
+                        <a class="whatsapp" href="whatsapp://send?phone=+79202685400"><i class="fab fa-whatsapp"></i> WhatsApp</a><br>
+                        <a class="viber" href="viber://add?number+79111813560"><i class="fab fa-viber"></i> Viber</a>
                     </div>
                 </div>
 
@@ -50,39 +50,43 @@
 
             <div class="row margintop">
                 <div class="col-sm-6 hidden-xs">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63943.70502780472!2d30.29051271076633!3d59.94473940001762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjw!5e0!3m2!1sru!2s!4v1521471103891"
-                            width="100%" height="375" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d304233.6835110816!2d30.127771585556232!3d59.93771457281709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjw!5e0!3m2!1sru!2s!4v1528748163352" width="100%" height="375" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
 
                 <div class="col-sm-6">
-                    <form action="" class="contact-form" method="post">
+                    {!! Form::open(['id' => 'contact-form', 'class' => 'contact-form']) !!}
 
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="name" name="nm" placeholder="Имя" required=""
-                                   autofocus="">
-                        </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Имя" minlength="2" maxlength="20" required autofocus>
+                    </div>
 
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="phone"
-                                   onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10"
-                                   placeholder="Телефон" required="">
-                        </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Телефон(по желанию)">
+                    </div>
 
-                        <div class="form-group form_left">
-                            <input type="email" class="form-control" id="email" name="em" placeholder="Емаил*"
-                                   required="">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control textarea-contact" rows="5" id="comment" name="FB"
-                                      placeholder="Сообщение*" required=""></textarea>
-                        </div>
-                        <button class="btn btn-default btn-send"><span class="glyphicon glyphicon-send"></span>
-                            Отправить
-                        </button>
-                    </form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Емаил" required>
+                    </div>
+
+                    <div class="form-group">
+                            <textarea class="form-control textarea-contact" rows="5" id="message" name="message"
+                                      placeholder="Сообщение" minlength="10" maxlength="500" required></textarea>
+                    </div>
+
+                    <button class="btn btn-default btn-send"><span class="glyphicon glyphicon-send"></span>
+                        Отправить
+                    </button>
+
+                    <span class="output_message"></span>
+
+                    {!! Form::close() !!}
                 </div>
             </div>
         </div>
     </section>
+@stop
 
+@section('scripts')
+    <!-- Mask Plugin -->
+    <script type="text/javascript" src="{{ asset('js/jquery.mask.min.js') }}"></script>
 @stop

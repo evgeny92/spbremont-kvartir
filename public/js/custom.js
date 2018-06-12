@@ -42,5 +42,26 @@ jQuery(document).ready(function ($) {
     //Alert
     $('div.alert').delay(5000).fadeOut(350);
 
+    //Phone mask
+    $('input[name="phone"]').mask('+0 (000) 000-00-00');
 
+    //AJAX Contact Form
+    $('#contact-form').on('submit', function(e){
+        e.preventDefault();
+        $('.output_message').text('Подождите...');
+        $.ajax({
+            type: 'POST',
+            url: '/contact',
+            data: $('#contact-form').serialize(),
+            success: function(data){
+                if (data.result){
+                    $('.output_message').text('Сообщение отправлено!').delay(2000).fadeOut(800);
+                } else {
+                    $('.output_message').text('Ошибка!').delay(2000).fadeOut(800);
+                }
+                $('#contact-form')[0].reset();
+            }
+        });
+        return false;
+    });
 });
