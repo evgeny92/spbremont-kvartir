@@ -22,12 +22,11 @@
                     @foreach($items as $item)
                         <div class="col-md-4">
                             <div class="blog-post hover02">
-                                {{--<a href="{{ url('articles', $item->article_slug) }}">--}}<img class="img-responsive"
-                                                 src="{{ asset('img/articles/' . $item->article_image ) }}" alt="">{{--</a>--}}
+                                <img class="img-responsive" src="{{ asset('img/articles/' . $item->article_image ) }}" alt="">
                                 <h4><a href="{{ url('articles', $item->article_slug) }}">
                                         {{ $item->article_title }}</a>
                                 </h4>
-                                <p>{{ str_limit(strip_tags($item->article_content), 150) }}<p>
+                                <p>{{ str_limit(strip_tags($item->article_content), 140) }}<p>
                                     <a class="btn btn-posts" href="{{ url('articles', $item->article_slug) }}">
                                         <span class="glyphicon glyphicon-eye-open"></span> Подробнее</a>
                             </div>

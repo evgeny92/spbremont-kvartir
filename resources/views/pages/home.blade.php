@@ -25,18 +25,17 @@
         <ul id="slider">
             <li>
                 <a href="#slide1">
-                    <img src="{{ asset('img/slides/1.jpg') }}"
-                         alt="Ремонт квартир под ключ! <a href='https://vk.com'>Узнать подробнее</a>">
+                    <img src="{{ asset('img/slides/1.jpg') }}" alt="Евроремонт квартир - <a href='http://spbremont-kvartir/articles/evroremont'>узнать подробнее</a>">
                 </a>
             </li>
             <li>
                 <a href="#slide2">
-                    <img src="{{ asset('img/slides/2.jpg') }}" alt="Ремонт квартир под ключ! <a href='#link'>Узнать подробнее</a>">
+                    <img src="{{ asset('img/slides/2.jpg') }}" alt="Капитальный ремонт квартир - <a href='http://spbremont-kvartir/articles/kapitalnyy-remont'>узнать подробнее</a>">
                 </a>
             </li>
             <li>
                 <a href="#slide3">
-                    <img src="{{ asset('img/slides/3.jpg') }}" alt="Ремонт квартир под ключ! <a href='#link'>Узнать подробнее</a>">
+                    <img src="{{ asset('img/slides/3.jpg') }}" alt="Косметический ремонт квартир - <a href='http://spbremont-kvartir/articles/kosmeticheskiy-remont'>узнать подробнее</a>">
                 </a>
             </li>
         </ul>

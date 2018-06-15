@@ -17,8 +17,7 @@ Route::post('/contact', 'ContactController@postContact')->name('postContact');
 Auth::routes();
 //Route::get('/home', 'HomeController@index')->name('home');
 
-// Admin
-
+// Dashboard
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth'], function () {
 
    Route::get('/', 'HomeController@index');

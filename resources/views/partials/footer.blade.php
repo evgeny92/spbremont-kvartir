@@ -1,6 +1,6 @@
 <footer>
     <div class="container">
-        <div class="col-md-4 col-sm-4">
+        <div class="col-md-5 col-sm-5">
             <h4>О нас</h4>
             <div class="widget">
                 <p>Более 10 лет мы предлагаем ремонтные услуги на рынке <strong>Санкт-Петербурга</strong>. У нас хорошая
@@ -9,25 +9,15 @@
                     выполнения всех ремонтных работ любой сложности по самым высоким стандартам.</p>
             </div>
         </div>
-        <div class="col-md-2 col-sm-2">
+        <div class="col-md-3 col-sm-3 col-md-offset-1">
             <h4>Навигация сайта</h4>
             <div class="widget">
                 <ul class="link-list">
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Прайс-лист</a></li>
-                    <li><a href="#">Наши Работы</a></li>
-                    <li><a href="#">Статьи</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-3">
-            <h4>Последние статьи</h4>
-            <div class="widget">
-                <ul class="link-list">
-                    <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-                    <li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
-                    <li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
+                    <li><a href="{{ route('/') }}">Главная</a></li>
+                    <li><a href="{{ route('price') }}">Прайс-лист</a></li>
+                    <li><a href="{{ route('portfolio') }}">Наши Работы</a></li>
+                    <li><a href="{{ route('articles') }}">Статьи</a></li>
+                    <li><a href="{{ route('contact') }}">Контакты</a></li>
                 </ul>
             </div>
         </div>
@@ -40,7 +30,7 @@
                 </p>
                 <p>
                     <strong>Телефон:</strong><br>
-                    <span class="glyphicon glyphicon-phone"></span> (123) 456-789 - 1255
+                    <span class="glyphicon glyphicon-phone"></span> <a href="tel:+79111813560">+7 (911) 181-35-60</a>
                 </p>
                 <p>
                     <strong>Почта:</strong><br>

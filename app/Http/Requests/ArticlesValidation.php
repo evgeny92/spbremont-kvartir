@@ -30,7 +30,7 @@ class ArticlesValidation extends FormRequest {
          CASE 'POST':
             {
                return [
-                  'article_title' => 'required|min:15|max:100|unique:articles,article_title',
+                  'article_title' => 'required|min:10|max:100|unique:articles,article_title',
                   'article_image' => 'required|image|max:1024',
                   'article_content' => 'required',
                ];
@@ -39,7 +39,7 @@ class ArticlesValidation extends FormRequest {
          CASE 'PATCH':
             {
                return [
-                  'article_title' => 'required|min:15|max:100|unique:articles,article_title,' . $this->article,
+                  'article_title' => 'required|min:10|max:100|unique:articles,article_title,' . $this->article,
                   'article_image' => 'image|max:1024',
                   'article_content' => 'required',
                ];

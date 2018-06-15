@@ -652,6 +652,10 @@ ul.nav li.dropdown a {
     padding: 20px 0 40px 0;
 }
 
+#singlepost-content li {
+    color: #656565;
+}
+
 .thumb-content {
     margin-bottom: 1%;
     margin-left: 0;
@@ -779,6 +783,11 @@ h4.heading {
 
 .widget {
     color: #858585;
+}
+
+.widget a {
+    color: #858585;
+    text-decoration: none;
 }
 
 .widgetheading {
