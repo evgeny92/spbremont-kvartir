@@ -42,9 +42,6 @@ jQuery(document).ready(function ($) {
     //Alert
     $('div.alert').delay(5000).fadeOut(350);
 
-    //Phone mask
-    $('input[name="phone"]').mask('+0 (000) 000-00-00');
-
     //AJAX Contact Form
     $('#contact-form').on('submit', function(e){
         e.preventDefault();

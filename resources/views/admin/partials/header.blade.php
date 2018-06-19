@@ -2,8 +2,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Page Description">
-<meta name="author" content="evgeny">
-<title>Startmin - Bootstrap Admin Theme</title>
+@yield('meta-tags')
 <!-- Bootstrap Core CSS -->
 <link href="{{ asset('dashboard/css/bootstrap.min.css') }}" rel="stylesheet">
 <!-- MetisMenu CSS -->

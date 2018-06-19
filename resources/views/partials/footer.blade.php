@@ -30,11 +30,11 @@
                 </p>
                 <p>
                     <strong>Телефон:</strong><br>
-                    <span class="glyphicon glyphicon-phone"></span> <a href="tel:+79111813560">+7 (911) 181-35-60</a>
+                    <a href="tel:+79111813560"><span class="glyphicon glyphicon-phone"></span> +7 (911) 181-35-60</a>
                 </p>
                 <p>
                     <strong>Почта:</strong><br>
-                    <span class="glyphicon glyphicon-envelope"></span> email@domainname.com
+                    <a href="mailto:example@gmail.com"><span class="glyphicon glyphicon-envelope"></span> example@gmail.com</a>
                 </p>
             </div>
             <div class="uSocial-Share" data-pid="c84184dca2052d2520cfbaa101fb40b8" data-type="share"

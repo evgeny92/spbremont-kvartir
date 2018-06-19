@@ -33,6 +33,8 @@ class ArticlesValidation extends FormRequest {
                   'article_title' => 'required|min:10|max:100|unique:articles,article_title',
                   'article_image' => 'required|image|max:1024',
                   'article_content' => 'required',
+                  'meta_description' => 'required|min:15|max:120',
+                  'meta_keywords' => 'required|min:10|max:70',
                ];
             }
          CASE 'PUT':
@@ -42,6 +44,8 @@ class ArticlesValidation extends FormRequest {
                   'article_title' => 'required|min:10|max:100|unique:articles,article_title,' . $this->article,
                   'article_image' => 'image|max:1024',
                   'article_content' => 'required',
+                  'meta_description' => 'required|min:15|max:120',
+                  'meta_keywords' => 'required|min:10|max:70'
                ];
             }
          default:

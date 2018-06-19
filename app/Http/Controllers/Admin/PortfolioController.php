@@ -47,6 +47,8 @@ class PortfolioController extends Controller {
       $portfolio->type_repair = $request->type_repair;
       $portfolio->year_implementation = $request->year_implementation;
       $portfolio->deadline = $request->deadline;
+      $portfolio->meta_description = $request->meta_description;
+      $portfolio->meta_keywords = $request->meta_keywords;
       $portfolio->save();
 
       if($request->hasFile('portfolio_photos')){
@@ -103,6 +105,8 @@ class PortfolioController extends Controller {
       $portfolio->type_repair = $request->type_repair;
       $portfolio->year_implementation = $request->year_implementation;
       $portfolio->deadline = $request->deadline;
+      $portfolio->meta_description = $request->meta_description;
+      $portfolio->meta_keywords = $request->meta_keywords;
       $portfolio->save();
 
       if($request->hasFile('portfolio_photos')){

@@ -1,5 +1,13 @@
 @extends('layouts.main')
 
+@section('meta-tags')
+    <title>Портфолио квартир после ремонта в Санкт-Петербурге</title>
+    <meta name="description" content="Портфолио наших выполненых работ по ремонту квартир под ключ в Санкт-Петербурге контроль качества на каждом этапе.">
+    <meta name="keywords" content="портфолио, выполненые работы, фотогалерея, ремонта квартир, отделка">
+    <meta property="og:title" content="Портфолио квартир после ремонта в Санкт-Петербурге">
+    <meta property="og:description" content="Портфолио наших выполненых работ по ремонту квартир под ключ в Санкт-Петербурге контроль качества на каждом этапе.">
+@stop
+
 @section('content')
 
     <section id="inner-headline">

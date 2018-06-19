@@ -42,6 +42,8 @@ class ArticleController extends Controller {
       $article->article_title = $request->article_title;
       $article->article_slug = str_slug($request->article_title);
       $article->article_content = $request->article_content;
+      $article->meta_description = $request->meta_description;
+      $article->meta_keywords = $request->meta_keywords;
 
       if($request->hasFile('article_image')){
          $article_image = $request->file('article_image');
@@ -92,6 +94,8 @@ class ArticleController extends Controller {
       $article->article_title = $request->article_title;
       $article->article_slug = str_slug($request->article_title);
       $article->article_content = $request->article_content;
+      $article->meta_description = $request->meta_description;
+      $article->meta_keywords = $request->meta_keywords;
 
       if($request->hasFile('article_image')){
          $article_image = $request->file('article_image');

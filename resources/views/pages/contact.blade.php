@@ -1,5 +1,13 @@
 @extends('layouts.main')
 
+@section('meta-tags')
+    <title>Наши контакты в Санкт-Петербурге</title>
+    <meta name="description" content="Наши контакты в Санкт-Петербурге, ждём вашего звонка +7 (911) 181-35-60.">
+    <meta name="keywords" content="ремонт квартир в спб, отделка санкт-петербург, евроремонт спб">
+    <meta property="og:title" content="Наши контакты в Санкт-Петербурге">
+    <meta property="og:description" content="Наши контакты в Санкт-Петербурге, ждём вашего звонка +7 (911) 181-35-60.">
+@stop
+
 @section('content')
 
     <section id="inner-headline">
@@ -89,4 +97,7 @@
 @section('scripts')
     <!-- Mask Plugin -->
     <script type="text/javascript" src="{{ asset('js/jquery.mask.min.js') }}"></script>
+    <!-- Phone mask -->
+    <script>$('input[name="phone"]').mask('+0 (000) 000-00-00');</script>
+
 @stop

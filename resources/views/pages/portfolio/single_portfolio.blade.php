@@ -1,5 +1,13 @@
 @extends('layouts.main')
 
+@section('meta-tags')
+    <title>Подробная характеристика объекта | {{ $portfolio->portfolio_title }}</title>
+    <meta name="description" content="{{ $portfolio->meta_description }}">
+    <meta name="keywords" content="{{ $portfolio->meta_keywords }}">
+    <meta property="og:title" content="Подробная характеристика объекта | {{ $portfolio->portfolio_title }}">
+    <meta property="og:description" content="{{ $portfolio->meta_description }}">
+@stop
+
 @section('styles')
     <link href="{{ asset('css/unite-gallery.css') }}" rel="stylesheet"/>
 @stop
@@ -69,6 +77,7 @@
 @stop
 
 @section('scripts')
+    <script src="{{ asset('js/jquery.js') }}"></script>
     <script src="{{ asset('js/unitegallery.min.js') }}"></script>
     <script src="{{ asset('js/ug-theme-tiles.js') }}"></script>
     <script type="text/javascript">

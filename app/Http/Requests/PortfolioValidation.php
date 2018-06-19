@@ -36,7 +36,9 @@ class PortfolioValidation extends FormRequest {
                   'year_implementation' => 'required|min:3|max:30',
                   'deadline' => 'required|min:6|max:50',
                   'portfolio_photos' => 'required|array',
-                  'portfolio_photos.*' => 'required|image|mimes:jpeg,bmp,png|max:2000'
+                  'portfolio_photos.*' => 'required|image|mimes:jpeg,bmp,png|max:2000',
+                  'meta_description' => 'required|min:15|max:120',
+                  'meta_keywords' => 'required|min:10|max:70',
                ];
             }
          CASE 'PUT':
@@ -50,7 +52,9 @@ class PortfolioValidation extends FormRequest {
                   'year_implementation' => 'required|min:3|max:30',
                   'deadline' => 'required|min:6|max:50',
                   'portfolio_photos' => 'array',
-                  'portfolio_photos.*' => 'image|mimes:jpeg,bmp,png|max:2000'
+                  'portfolio_photos.*' => 'image|mimes:jpeg,bmp,png|max:2000',
+                  'meta_description' => 'required|min:15|max:120',
+                  'meta_keywords' => 'required|min:10|max:70',
                ];
             }
          default:

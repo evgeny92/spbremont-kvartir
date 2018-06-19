@@ -1,5 +1,9 @@
 @extends('admin.layouts.main')
 
+@section('meta-tags')
+    <title>Панель управления | Редактирование портфолио</title>
+@stop
+
 @section('content')
 
     <div class="row">
@@ -85,6 +89,20 @@
                                     <span class="text-danger">{{ $errors->first('portfolio_photos') }}</span>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="form-group {{ $errors->has('meta_description') ? 'has-error' : '' }}">
+                            <label for="meta_description">Мета описание</label>
+                            <input type="text" id="meta_description" name="meta_description" class="form-control"
+                                   value="{{ $portfolio->meta_description }}">
+                            <span class="text-danger">{{ $errors->first('meta_description') }}</span>
+                        </div>
+
+                        <div class="form-group {{ $errors->has('meta_keywords') ? 'has-error' : '' }}">
+                            <label for="meta_keywords">Ключевые слова</label>
+                            <input type="text" id="meta_keywords" name="meta_keywords" class="form-control"
+                                   value="{{ $portfolio->meta_keywords }}">
+                            <span class="text-danger">{{ $errors->first('meta_keywords') }}</span>
                         </div>
 
                         <input class="btn btn-success btn-lg btn-block" type="submit" id="submit-store"

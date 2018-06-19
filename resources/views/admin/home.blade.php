@@ -1,5 +1,9 @@
 @extends('admin.layouts.main')
 
+@section('meta-tags')
+    <title>Панель управления | Главная страница</title>
+@stop
+
 @section('content')
 
     <div class="row">

@@ -1,5 +1,9 @@
 @extends('admin.layouts.main')
 
+@section('meta-tags')
+    <title>Панель управления | Просмотр портфолио</title>
+@stop
+
 @section('content')
 
     <div class="row">
@@ -29,6 +33,10 @@
                     <div class="notice notice-info">
                         <strong>Срок выполнения:</strong> <span class="pull-right">{{ $portfolio->deadline }}</span>
                     </div>
+
+                    <strong>Мета описание:</strong> <em>{!! $portfolio->meta_description !!}</em><br>
+                    <strong>Ключевые слова:</strong> <em>{!! $portfolio->meta_keywords !!}</em>
+
                 </div>
             </div>
         </div>

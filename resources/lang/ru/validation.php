@@ -149,5 +149,7 @@ return [
        'old_password' => 'Старый пароль',
        'new_password' => 'Новый пароль',
        'confirm_password' => 'Повтор нового пароля',
+       'meta_description' => 'Мета описание',
+       'meta_keywords' => 'Ключевые слова',
     ],
 ];

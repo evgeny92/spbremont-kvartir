@@ -1,5 +1,9 @@
 @extends('admin.layouts.main')
 
+@section('meta-tags')
+    <title>Панель управления | Просмотр статьи</title>
+@stop
+
 @section('content')
 
     <div class="row">
@@ -16,6 +20,8 @@
                         <img class="img-responsive" src="{{ asset('img/articles/' . $article->article_image) }}">
                     </div>
                     {!! $article->article_content !!}
+                    <strong>Мета описание:</strong> <em>{!! $article->meta_description !!}</em><br>
+                    <strong>Ключевые слова:</strong> <em>{!! $article->meta_keywords !!}</em>
                 </div>
             </div>
         </div>

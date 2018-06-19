@@ -1,5 +1,13 @@
 @extends('layouts.main')
 
+@section('meta-tags')
+    <title>Популярные и полезные статьи о ремонте квартиры | {{ $article->article_title }}</title>
+    <meta name="description" content="{{ $article->meta_description }}.">
+    <meta name="keywords" content="{{ $article->meta_keywords }}">
+    <meta property="og:title" content="Популярные и полезные статьи о ремонте квартиры | {{ $article->article_title }}">
+    <meta property="og:description" content="{{ $article->meta_description }}.">
+@stop
+
 @section('content')
 
     <section id="inner-headline">
