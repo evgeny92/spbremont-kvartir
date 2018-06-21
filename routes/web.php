@@ -15,6 +15,11 @@ Route::get('/contact', 'ContactController@getContact')->name('contact');
 Route::post('/contact', 'ContactController@postContact')->name('postContact');
 
 Auth::routes();
+if (!env('ALLOW_REGISTRATION', false)) {
+   Route::any('/register', function() {
+      abort(404);
+   });
+}
 //Route::get('/home', 'HomeController@index')->name('home');
 
 // Dashboard

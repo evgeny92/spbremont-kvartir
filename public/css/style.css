@@ -1,6 +1,6 @@
 @import url('animate.css');
 
-/*Main style*/
+/*MAIN STYLE*/
 body {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 14px;
@@ -39,7 +39,7 @@ input, button, select, textarea {
     margin-top: 10px;
 }
 
-/*  Header  */
+/*HEADER*/
 .topbar {
     background-color: #fff;
     padding: 10px 0;
@@ -104,13 +104,6 @@ header .navbar {
     padding: 18px 0;
     background: #fff;
 }
-
-/*
-.home-page header .navbar-default {
-    background: #1b1b1b;
-    width: 100%;
-}
-*/
 
 header .nav li a:hover,
 header .nav li a:focus,
@@ -204,7 +197,7 @@ header .nav li .dropdown-menu li a {
     padding: 3px 12px;
 }
 
-/* --- menu --- */
+/*NAVIGATION*/
 
 header ul.nav li {
     border: none;
@@ -291,7 +284,7 @@ ul.nav li.dropdown a {
     display: block;
 }
 
-/* page headline*/
+/*PAGE HEADLINE*/
 
 #inner-headline {
     background: #008fcc;
@@ -322,7 +315,7 @@ ul.nav li.dropdown a {
     color: #FFFFFF;
 }
 
-/**** Caption ****/
+/*CAPTION*/
 
 .caption-h3 {
     padding-bottom: 20px;
@@ -333,7 +326,7 @@ ul.nav li.dropdown a {
     color: #000000;
 }
 
-/***** Main Page *****/
+/*MAIN PAGE*/
 
 #main-caption {
     background-color: #008fcc;
@@ -383,7 +376,7 @@ ul.nav li.dropdown a {
     font-size: 16px;
 }
 
-/***** Price Page *****/
+/*PRICE PAGE*/
 
 #price-content {
     padding: 20px 0 40px 0;
@@ -418,7 +411,7 @@ ul.nav li.dropdown a {
     font-weight: bold;
 }
 
-/***** Portfolio Page *****/
+/*PORTFOLIO PAGE*/
 
 #portfolio-content {
     padding: 20px 0 40px 0;
@@ -513,7 +506,7 @@ ul.nav li.dropdown a {
     color: #fff;
 }
 
-/**** Single Page *****/
+/*SINGLE PORTFOLIO PAGE*/
 
 #single-content {
     padding: 20px 0 40px 0;
@@ -596,7 +589,7 @@ ul.nav li.dropdown a {
     color: #45ABCD;
 }
 
-/****Posts Content****/
+/*POSTS CONTENT*/
 
 #posts-content {
     padding: 20px 0 40px 0;
@@ -646,7 +639,7 @@ ul.nav li.dropdown a {
     font-weight: bold;
 }
 
-/**** Single post content ****/
+/*SINGLE POST CONTENT*/
 
 #singlepost-content {
     padding: 20px 0 40px 0;
@@ -662,7 +655,7 @@ ul.nav li.dropdown a {
     padding-left: 0;
 }
 
-/**** Contact Content ****/
+/*CONTACT CONTENT*/
 
 #contact-content {
     padding: 20px 0 40px 0;
@@ -702,15 +695,15 @@ ul.nav li.dropdown a {
     font-weight: bold;
 }
 
-/* typography */
+/*TYPOGRAPHY*/
 h1 {
     text-align: center;
     margin-bottom: -20px !important;
 }
 
-/* Forms */
+/*FORMS*/
 
-/* --- contact form  ---- */
+/*CONTACT FORM*/
 form#contactform input[type="text"] {
     width: 100%;
     border: 1px solid #f5f5f5;
@@ -740,9 +733,7 @@ form#contactform .validation {
     font-size: 11px;
 }
 
-/* --- button --- */
-
-/* --- Footer --- */
+/*FOOTER*/
 
 ul.link-list {
     margin: 0;
@@ -906,10 +897,9 @@ footer h5 a:hover, footer a:hover {
 .copyright a:hover {
     color: #f5f5f5;
 }
+/*END FOOTER*/
 
-/*--- End Footer ---*/
-
-/*---Scroll To Top ---*/
+/*SCROLL TO TOP*/
 .scrollup {
     position: fixed;
     width: 32px;
@@ -952,7 +942,7 @@ a.scrollup i:hover {
     color: #FFF;
 }
 
-/*Sign In Form*/
+/*SIGN IN FORM*/
 
 .card-container.card {
     max-width: 350px;
@@ -1073,10 +1063,36 @@ a.scrollup i:hover {
 .forgot-password:focus {
     color: #008fcc;
 }
+/*SIGN IN END*/
 
-/* Sign In End*/
 
-/*---Media queries ---*/
+/*PAGE 404*/
+.error-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+.error-actions {
+    margin-top:15px;
+    margin-bottom:15px;
+}
+.error-actions .btn {
+    text-align: center;
+    border-radius: 0;
+    border: 1px solid #008fcc;
+    background: #008fcc;
+    color: #fff;
+    margin: 10px 0 0 0;
+    padding: 10px 30px;
+}
+.error-actions .btn:hover .btn:focus{
+    border: 1px solid #008fcc;
+    background: #00bfff;
+    color: #FFFFFF;
+    transition: background 0.5s;
+}
+/*PAGE 404 END*/
+
+/*MEDIA QUERIES*/
 @media (min-width: 979px) and (max-width: 1200px) {
     .image-size img {
         margin: 0 0 25px 0;
@@ -1351,6 +1367,13 @@ a.scrollup i:hover {
 
     .btn-send {
         margin: 0 0 10px 0;
+    }
+
+    .error-template h1 {
+        font-size: 24px;
+    }
+    .error-template h2 {
+        font-size: 18px;
     }
 
 }
