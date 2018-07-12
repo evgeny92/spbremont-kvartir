@@ -15,7 +15,7 @@
                 <ul class="link-list">
                     <li><a href="{{ route('/') }}">Главная</a></li>
                     <li><a href="{{ route('price') }}">Прайс-лист</a></li>
-                    <li><a href="{{ route('portfolio') }}">Наши Работы</a></li>
+                    <li><a href="{{ route('portfolio') }}">Портфолио</a></li>
                     <li><a href="{{ route('articles') }}">Статьи</a></li>
                     <li><a href="{{ route('contact') }}">Контакты</a></li>
                 </ul>
@@ -37,9 +37,7 @@
                     <a href="mailto:example@gmail.com"><span class="glyphicon glyphicon-envelope"></span> example@gmail.com</a>
                 </p>
             </div>
-            <div class="uSocial-Share" data-pid="c84184dca2052d2520cfbaa101fb40b8" data-type="share"
-                 data-options="round-rect,style1,default,absolute,horizontal,size32,eachCounter0,counter1,counter-after,nomobile"
-                 data-social="vk,ok,fb,mail"></div>
+            <div class="uSocial-Share" data-pid="4c880e3ef4d68b95cdb4041d5d0594a4" data-type="share" data-options="round-rect,style1,default,absolute,horizontal,size32,eachCounter0,counter1,counter-after,nomobile" data-social="vk,ok,fb"></div>
         </div>
     </div>
     <div id="sub-footer">

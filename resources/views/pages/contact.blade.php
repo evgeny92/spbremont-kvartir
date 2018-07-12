@@ -30,8 +30,8 @@
                     <div class="contact-detail-box">
                         <i class="fas fa-phone fa-5x"></i>
                         <h4>Viber, WhatsApp</h4>
-                        <a class="whatsapp" href="whatsapp://send?phone=+79202685400"><i class="fab fa-whatsapp"></i> WhatsApp</a><br>
-                        <a class="viber" href="viber://add?number+79111813560"><i class="fab fa-viber"></i> Viber</a>
+                        <a class="viber" href="viber://add?number=+79111813560"><i class="fab fa-viber"></i> Viber</a><br>
+                        <a class="whatsapp" href="whatsapp://send?phone=+79202685400"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                     </div>
                 </div>
 

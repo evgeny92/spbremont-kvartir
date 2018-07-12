@@ -30,11 +30,21 @@
             </div>
             <div class="navbar-collapse collapse ">
                 <ul class="nav navbar-nav">
-                    <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="/">Главная</a></li>
-                    <li class="{{ Request::is('price') ? 'active' : '' }}"><a href="/price">Прайс-лист</a></li>
-                    <li class="{{ Request::is('portfolio') ? 'active' : '' }}"><a  href="/portfolio">Портфолио</a></li>
-                    <li class="{{ Request::is('articles') ? 'active' : '' }}"><a href="/articles">Статьи</a></li>
-                    <li class="{{ Request::is('contact') ? 'active' : '' }}"><a href="/contact">Контакты</a></li>
+                    <li class="{{ Request::is('/') ? 'active' : '' }}">
+                        <a href="{{ route('/') }}">Главная</a>
+                    </li>
+                    <li class="{{ Request::is('price') ? 'active' : '' }}">
+                        <a href="{{ route('price') }}">Прайс-лист</a>
+                    </li>
+                    <li class="{{ Request::is('portfolio') ? 'active' : '' }}">
+                        <a  href="{{ route('portfolio') }}">Портфолио</a>
+                    </li>
+                    <li class="{{ Request::is('articles') ? 'active' : '' }}">
+                        <a href="{{ route('articles') }}">Статьи</a>
+                    </li>
+                    <li class="{{ Request::is('contact') ? 'active' : '' }}">
+                        <a href="{{ route('contact') }}">Контакты</a>
+                    </li>
                 </ul>
             </div>
         </div>
