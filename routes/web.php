@@ -14,6 +14,8 @@ Route::get('/articles/{article_slug}', 'PagesController@getSingleArticlePage')->
 Route::get('/contact', 'ContactController@getContact')->name('contact');
 Route::post('/contact', 'ContactController@postContact')->name('postContact');
 
+Route::get('/sitemap.xml', 'SitemapController@sitemap');
+
 Auth::routes();
 if (!env('ALLOW_REGISTRATION', false)) {
    Route::any('/register', function() {
@@ -24,7 +26,6 @@ if (!env('ALLOW_REGISTRATION', false)) {
 
 // Dashboard
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth'], function () {
-
    Route::get('/', 'HomeController@index');
    Route::resource('portfolio', 'PortfolioController');
    Route::resource('articles', 'ArticleController');
@@ -32,8 +33,8 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth
    Route::post('user', 'ProfileController@updateUserProfile')->name('updateUserProfile');
    Route::get('user/password', 'ProfileController@showUserPassword')->name('updatePassword');
    Route::post('user/password', 'ProfileController@updateUserPassword')->name('updateUserPassword');
-
 });
+
 
 
 
