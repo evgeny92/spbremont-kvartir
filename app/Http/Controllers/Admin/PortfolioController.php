@@ -55,7 +55,8 @@ class PortfolioController extends Controller {
          foreach($request->portfolio_photos as $portfolio_photo){
             $fileName = rand() . '.' . $portfolio_photo->getClientOriginalExtension();
             $path = public_path('img/portfolio/' . $fileName);
-            Image::make($portfolio_photo)->resize(1280, 960)->save($path);
+            $watermark = Image::make(public_path('img/logo.png'));
+            Image::make($portfolio_photo)->resize(1280, 960)->insert($watermark, 'bottom-right', 40, 30)->save($path);
             $newFile = new Photo();
             $newFile->portfolio_photos = $fileName;
             $newFile->save();
@@ -114,7 +115,8 @@ class PortfolioController extends Controller {
          foreach($portfolio_photos as $portfolio_photo){
             $fileName = rand() . '.' . $portfolio_photo->getClientOriginalExtension();
             $path = public_path('img/portfolio/' . $fileName);
-            Image::make($portfolio_photo)->resize(1280, 960)->save($path);
+            $watermark = Image::make(public_path('img/logo.png'));
+            Image::make($portfolio_photo)->resize(1280, 960)->insert($watermark, 'bottom-right', 40, 30)->save($path);
             //Delete old filename
             foreach($portfolio->photos as $photo){
                $portfolio->photos()->detach($photo);

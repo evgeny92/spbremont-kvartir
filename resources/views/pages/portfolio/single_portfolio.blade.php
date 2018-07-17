@@ -34,7 +34,7 @@
                 <div class="col-md-7 hidden-sm hidden-xs">
                     <div class="image">
                         <img src="{{ asset('img/portfolio/' . $photo->portfolio_photos) }}" class="img-responsive"
-                             width="600px" alt="">
+                             width="600px" alt="Портфолио ремонта квартир">
                     </div>
                 </div>
                 <div class="col-md-5">
@@ -67,7 +67,7 @@
             <div class="row">
                 <div id="gallery" style="display:none;">
                     @foreach($photos as $photo)
-                        <img alt="" src="{{ asset('img/portfolio/' . $photo->portfolio_photos) }}"
+                        <img alt="Ремонт квартиры" src="{{ asset('img/portfolio/' . $photo->portfolio_photos) }}"
                              data-image="{{ asset('img/portfolio/' . $photo->portfolio_photos) }}"/>
                     @endforeach
                 </div>

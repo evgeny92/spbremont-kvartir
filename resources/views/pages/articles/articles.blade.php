@@ -30,7 +30,7 @@
                     @foreach($items as $item)
                         <div class="col-md-4">
                             <div class="blog-post hover02">
-                                <img class="img-responsive" src="{{ asset('img/articles/' . $item->article_image ) }}" alt="">
+                                <img class="img-responsive" src="{{ asset('img/articles/' . $item->article_image ) }}" alt="Статья о ремонте квартир">
                                 <h4><a href="{{ url('articles', $item->article_slug) }}">
                                         {{ $item->article_title }}</a>
                                 </h4>

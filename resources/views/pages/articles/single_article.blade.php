@@ -29,7 +29,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="pull-left col-md-5 col-xs-12 thumb-content">
-                            <img class="center-block img-responsive" src="{{ asset('img/articles/' . $article->article_image) }}">
+                            <img class="center-block img-responsive" alt="Статья о ремонте квартир" src="{{ asset('img/articles/' . $article->article_image) }}">
                         </div>
                         {!! $article->article_content !!}
                         <p class="pull-right"><strong>Опубликовано:</strong> {{ $article->created_at->format('d.m.Y') }}</p>

@@ -32,7 +32,7 @@
                             @foreach($portfolio->photos as $photo)
                                 @if($loop->first)
                                     <img src="{{ asset('img/portfolio/' . $photo->portfolio_photos) }}"
-                                         class="img-responsive" alt="Портфоли ремонт квартир">
+                                         class="img-responsive" alt="Портфолио ремонта квартир">
                                 @endif
                             @endforeach
                             <div class="quotes">
