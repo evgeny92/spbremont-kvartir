@@ -34,7 +34,7 @@
                 </p>
                 <p>
                     <strong>Почта:</strong><br>
-                    <a href="mailto:example@gmail.com"><span class="glyphicon glyphicon-envelope"></span> example@gmail.com</a>
+                    <a href="mailto:spbremkvar@gmail.com"><span class="glyphicon glyphicon-envelope"></span> spbremkvar@gmail.com</a>
                 </p>
             </div>
             <div class="uSocial-Share" data-pid="4c880e3ef4d68b95cdb4041d5d0594a4" data-type="share" data-options="round-rect,style1,default,absolute,horizontal,size32,eachCounter0,counter1,counter-after,nomobile" data-social="vk,ok,fb"></div>

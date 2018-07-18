@@ -4,12 +4,12 @@
         <div class="row">
             <div class="col-md-8">
                 <a class="navbar-brand pull-left img-responsive" href="{{ url('/') }}"><img src="{{ asset('img/logo.png') }}"
-                                                                                        alt="logo"/></a>
+                                                                                        alt="Логотип"/></a>
             </div>
             <div class="col-md-4">
                 <p class="pull-right phone-mail">
                     <a href="tel:+79111813560"> <i class="fa fa-phone"></i> +7 (911) 181-35-60</a><br>
-                    <a href="mailto:example@gmail.com"><i class="fa fa-envelope"></i> example@gmail.com</a>
+                    <a href="mailto:spbremkvar@gmail.com"><i class="fa fa-envelope"></i> spbremkvar@gmail.com</a>
                 </p>
             </div>
         </div>

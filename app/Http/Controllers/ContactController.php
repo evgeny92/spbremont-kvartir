@@ -18,7 +18,7 @@ class ContactController extends Controller {
 
       if($request->ajax() && !empty($request->all())){
          $contact = $request;
-         Mail::to('spbremont-kvartir@mail.ru')->send(new Contact($contact));
+         Mail::to('spbremkvar@gmail.com')->send(new Contact($contact));
          $result = true;
       }
       return response()->json(['result' => $result]);

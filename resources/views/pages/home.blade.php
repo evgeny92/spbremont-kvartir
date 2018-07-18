@@ -120,7 +120,7 @@
                                 <blockquote>
                                     <div class="row">
                                         <div class="col-sm-3 text-center">
-                                            <img class="img-circle" src="{{ asset('img/team1.jpg') }}"></div>
+                                            <img class="img-circle" alt="Отзыв клиента" src="{{ asset('img/team1.jpg') }}"></div>
                                         <div class="col-sm-9">
                                             <p>
                                                 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
@@ -138,7 +138,7 @@
                                 <blockquote>
                                     <div class="row">
                                         <div class="col-sm-3 text-center">
-                                            <img class="img-circle" src="{{ asset('img/team2.jpg') }}"></div>
+                                            <img class="img-circle" alt="Отзыв клиента" src="{{ asset('img/team2.jpg') }}"></div>
                                         <div class="col-sm-9">
                                             <p>
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor
@@ -156,7 +156,7 @@
                                 <blockquote>
                                     <div class="row">
                                         <div class="col-sm-3 text-center">
-                                            <img class="img-circle" src="{{ asset('img/team3.jpg') }}"></div>
+                                            <img class="img-circle" alt="Отзыв клиента" src="{{ asset('img/team3.jpg') }}"></div>
                                         <div class="col-sm-9">
                                             <p>
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit

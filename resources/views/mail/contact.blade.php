@@ -17,7 +17,7 @@
 </div>
 
 <div style="display: table; width: 100%; text-align: center; height: 40px; background: #008fcc; color: #fff; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; font-weight: bold;">
-    <div style="display: table-cell; vertical-align: middle;">Е-майл: {{ $contact->email }}</div>
+    <div style="display: table-cell; vertical-align: middle; color: #fff;">Е-майл: {{ $contact->email }}</div>
     <div style="display: table-cell; vertical-align: middle;">Телефон: {{ $contact->phone }}</div>
 </div>
 </body>
