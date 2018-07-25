@@ -105,7 +105,7 @@
                 </div>
             </div>
             <div class='row'>
-                <div class='col-md-8 col-md-offset-2'>
+                <div class='col-md-12'>
                     <div class="carousel slide" data-ride="carousel" id="quote-carousel">
                         <!-- Bottom Carousel Indicators -->
                         <ol class="carousel-indicators">
@@ -120,15 +120,12 @@
                                 <blockquote>
                                     <div class="row">
                                         <div class="col-sm-3 text-center">
-                                            <img class="img-circle" alt="Отзыв клиента" src="{{ asset('img/team1.jpg') }}"></div>
-                                        <div class="col-sm-9">
+                                            <img class="img-circle" alt="Отзыв клиента" src="{{ asset('img/review1.jpg') }}"></div>
+                                        <div class="col-sm-8">
                                             <p>
-                                                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-                                                consectetur, adipisci velit!
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit
-                                                in arcu blandit.
+                                                По рекомендации знакомых обратилась сюда. Решила сделать маме ремонт в квартире к юбилею. Перестелили полы, выровняли стены и потолки, у мамы хрущёвка и стены там были все вкривь и вкось. Теперь все ровно, будто так и было всегда. Постелили ламинат — ничего нигде не скрипит и не гнется. В кухне уложили кафельную плитку на стенах и на полу — все просто супер. Вообще все сделали очень аккуратно, ремонтом мама полностью довольна!
                                             </p>
-                                            <small>Someone famous</small>
+                                            <small>Юлия</small>
                                         </div>
                                     </div>
                                 </blockquote>
@@ -138,15 +135,12 @@
                                 <blockquote>
                                     <div class="row">
                                         <div class="col-sm-3 text-center">
-                                            <img class="img-circle" alt="Отзыв клиента" src="{{ asset('img/team2.jpg') }}"></div>
-                                        <div class="col-sm-9">
+                                            <img class="img-circle" alt="Отзыв клиента" src="{{ asset('img/review2.jpg') }}"></div>
+                                        <div class="col-sm-8">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor
-                                                nec lacus ut tempor. Mauris.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit
-                                                in arcu blandit.
+                                                Спешу поделиться своим отзывом. Недавно с женой решили, что наша ванная комната изжила себя, надумали ее обновить. Долго искали подходящих мастеров, читали отзывы, но все сомневались. И тут знакомые посоветовали отличных мастеров. Мы решили рискнуть и абсолютно не пожалели! Результат приятно удивил — мастера все сделали в срок, качественно, чисто, добротно. Кафельную плитку уложили идеально, ванну и унитаз установили на отлично. Наша ванная теперь просто красавица. Заходим в нее не только помыться, но и полюбоваться.
                                             </p>
-                                            <small>Someone famous</small>
+                                            <small>Сергей</small>
                                         </div>
                                     </div>
                                 </blockquote>
@@ -156,15 +150,12 @@
                                 <blockquote>
                                     <div class="row">
                                         <div class="col-sm-3 text-center">
-                                            <img class="img-circle" alt="Отзыв клиента" src="{{ asset('img/team3.jpg') }}"></div>
-                                        <div class="col-sm-9">
+                                            <img class="img-circle" alt="Отзыв клиента" src="{{ asset('img/review3.jpg') }}"></div>
+                                        <div class="col-sm-8">
                                             <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit
-                                                in arcu blandit.
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit
-                                                in arcu blandit.
+                                                Отличная бригада мастеров, все делают быстро и качественно. Прайс прозрачный, никаких переплат, превратили мою обычную однушку в приличные апартаменты. Работу сдают в срок, качеством я доволен, советую!
                                             </p>
-                                            <small>Someone famous</small>
+                                            <small>Станислав</small>
                                         </div>
                                     </div>
                                 </blockquote>
