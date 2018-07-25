@@ -36,9 +36,9 @@
     <div class="navbar-default sidebar" role="navigation">
         <div class="sidebar-nav navbar-collapse">
             <ul class="nav">
-                <li><a href="{{ url('admin') }}"><i class="fa fa-dashboard fa-fw"></i> Главная</a></li>
-                <li><a href="{{ url('admin/portfolio') }}"><i class="fa fa-suitcase fa-fw"></i> Портфолио</a></li>
-                <li><a href="{{ url('admin/articles') }}"><i class="fa fa-edit fa-fw"></i> Статьи</a></li>
+                <li><a href="{{ url('adminspb') }}"><i class="fa fa-dashboard fa-fw"></i> Главная</a></li>
+                <li><a href="{{ url('adminspb/portfolio') }}"><i class="fa fa-suitcase fa-fw"></i> Портфолио</a></li>
+                <li><a href="{{ url('adminspb/articles') }}"><i class="fa fa-edit fa-fw"></i> Статьи</a></li>
             </ul>
         </div>
     </div>
