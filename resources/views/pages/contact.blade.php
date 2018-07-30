@@ -40,7 +40,7 @@
                         <i class="fas fa-envelope fa-5x"></i>
                         <h4>E-mail</h4>
                         <address>
-                            <a href="mailto:example@gmail.com">example@gmail.com</a>
+                            <a href="mailto:spbremkvar@gmail.com">spbremkvar@gmail.com</a>
                         </address>
                     </div>
                 </div>
