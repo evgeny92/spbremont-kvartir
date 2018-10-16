@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="yandex-verification" content="396ab79a7a34fea2" />
     @yield('meta-tags')
-    <meta property="og:type" content=website">
+    <meta property="og:type" content="website">
     <meta property="og:site_name" content="Ремонт квартир в Санкт-Петербурге">
     <meta property="og:image" content="{{ asset('img/1.jpg') }}">
     <meta property="og:locale" content="ru_RU">
