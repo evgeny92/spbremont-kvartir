@@ -6,6 +6,7 @@
     <meta name="keywords" content="статьи о ремонте, полезные статьи о ремонте, статьи о ремонте санкт-петербург">
     <meta property="og:title" content="Популярные и полезные статьи о ремонте квартиры">
     <meta property="og:description" content="Полезные статьи о ремонте квартиры.">
+    <meta property="og:url" content="https://spbremont-kvartir.ru/articles">
 @stop
 
 @section('content')

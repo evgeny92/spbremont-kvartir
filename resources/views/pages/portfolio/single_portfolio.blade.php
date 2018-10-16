@@ -6,6 +6,7 @@
     <meta name="keywords" content="{{ $portfolio->meta_keywords }}">
     <meta property="og:title" content="Подробная характеристика объекта | {{ $portfolio->portfolio_title }}">
     <meta property="og:description" content="{{ $portfolio->meta_description }}">
+    <meta property="og:url" content="https://spbremont-kvartir.ru/portfolio/{{ $portfolio->portfolio_slug }}">
 @stop
 
 @section('styles')

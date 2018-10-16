@@ -4,9 +4,8 @@
     <meta name="yandex-verification" content="396ab79a7a34fea2" />
     @yield('meta-tags')
     <meta property="og:type" content=website">
-    <meta property="og:site_name" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="{{ asset('img/logo.png') }}">
+    <meta property="og:site_name" content="Ремонт квартир в Санкт-Петербурге">
+    <meta property="og:image" content="{{ asset('img/1.jpg') }}">
     <meta property="og:locale" content="ru_RU">
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">

@@ -6,6 +6,7 @@
     <meta name="keywords" content="ремонт квартир в спб, отделка санкт-петербург, евроремонт спб">
     <meta property="og:title" content="Наши контакты в Санкт-Петербурге">
     <meta property="og:description" content="Наши контакты в Санкт-Петербурге, ждём вашего звонка +7 (911) 181-35-60.">
+    <meta property="og:url" content="https://spbremont-kvartir.ru/contact">
 @stop
 
 @section('content')

@@ -6,6 +6,7 @@
     <meta name="keywords" content="цены на ремонт квартир в санкт-петербурге, ремонт квартир в спб прайс-лист">
     <meta property="og:title" content="Прайс-лист на ремонт квартир в Санкт-Петербурге | Оптимальная стоимость ремонта квартиры под ключ">
     <meta property="og:description" content="Оптимальные цены на ремонт квартир под ключ в Санкт-Петербурге.">
+    <meta property="og:url" content="https://spbremont-kvartir.ru/price">
 @stop
 
 @section('content')

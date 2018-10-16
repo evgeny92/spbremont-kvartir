@@ -6,6 +6,7 @@
     <meta name="keywords" content="{{ $article->meta_keywords }}">
     <meta property="og:title" content="Популярные и полезные статьи о ремонте квартиры | {{ $article->article_title }}">
     <meta property="og:description" content="{{ $article->meta_description }}.">
+    <meta property="og:url" content="https://spbremont-kvartir.ru/articles/{{ $article->article_slug }}">
 @stop
 
 @section('content')
