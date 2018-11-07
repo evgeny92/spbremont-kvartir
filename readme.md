@@ -12,7 +12,7 @@ The project spbremont-kvartir.ru was implemented in 2018 for a company that prov
 
 - davejamesmiller/laravel-breadcrumbs - a simple Laravel-style way to create breadcrumbs
 - intervention/image - library providing an easier and expressive way to create, edit, and compose images
-- laravelCollective/html - package for working with htmkl forms
+- laravelCollective/html - package for working with html forms
 
 <br>
 
