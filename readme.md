@@ -14,6 +14,8 @@ The project spbremont-kvartir.ru was implemented in 2018 for a company that prov
 - intervention/image - library providing an easier and expressive way to create, edit, and compose images
 - laravelCollective/html - package for working with htmkl forms
 
+<br>
+
 <p align="center"> 
-  <img  src="https://tonitsoi-evgeny.ru/images/portfolio/1541508415.jpg" width="70%">
+  <img  src="https://tonitsoi-evgeny.ru/images/portfolio/1541508415.jpg" width="90%">
 </p>
